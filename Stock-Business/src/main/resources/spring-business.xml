@@ -13,6 +13,4 @@
 
 	<import resource="classpath:spring-data.xml" />
 
-	<context:component-scan base-package="fr.s2re.stock.business.impl" />
-
 </beans>

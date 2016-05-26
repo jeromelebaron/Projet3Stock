@@ -20,7 +20,7 @@ import fr.s2re.stock.entity.Produit;
  * @author $LastChangedBy$
  * @version $Revision$ $Date$
  */
-@WebService(targetNamespace = "http://webservice.stock.s2re.fr", endpointInterface = "fr.s2re.stock.api.IStockWebService", serviceName = "webServiceStock")
+@WebService(targetNamespace = "http://webservice.stock.s2re.fr", endpointInterface = "fr.s2re.stock.api.webservice.IStockWebService", serviceName = "webServiceStock")
 public class StockWebServiceImpl implements IStockWebService {
 
     /**

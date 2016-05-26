@@ -8,6 +8,7 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import fr.s2re.stock.api.data.IProduitDao;
 import fr.s2re.stock.entity.Produit;
@@ -18,6 +19,7 @@ import fr.s2re.stock.entity.Produit;
  * @author $LastChangedBy$
  * @version $Revision$ $Date$
  */
+@Service
 public class ProduitDaoImpl implements IProduitDao {
 
     /**
