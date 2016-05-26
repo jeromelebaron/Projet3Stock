@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>fr.s2re</groupId>
+		<artifactId>Stock-Parent</artifactId>
+		<version>0.1</version>
+		<relativePath>../Stock-Parent/pom.xml</relativePath>
+	</parent>
+	<artifactId>Stock-Data</artifactId>
+	<name>Stock-Data</name>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-dbcp2</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>${project.parent.groupId}</groupId>
+			<artifactId>Stock-Entity</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+            <groupId>${project.parent.groupId}</groupId>
+            <artifactId>Stock-ApiData</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+	</dependencies>
+</project>
