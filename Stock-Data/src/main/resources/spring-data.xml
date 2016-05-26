@@ -15,10 +15,10 @@
 	
 	<bean id="beanDataSource" class="org.apache.commons.dbcp2.BasicDataSource"
 		destroy-method="close">
-		<property name="url" value="jdbc:mysql://192.168.100.172/bdd_s2re_stock" />
-		<property name="username" value="root" />
-		<property name="password" value="" />
-		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="${bdd.url}" />
+		<property name="username" value="${bdd.username}" />
+		<property name="password" value="${bdd.password}" />
+		<property name="driverClassName" value="${bdd.driver}" />
 	</bean>
 	<bean id="monSessionFactory"
 		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
