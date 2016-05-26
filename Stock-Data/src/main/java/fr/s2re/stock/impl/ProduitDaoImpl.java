@@ -1,33 +1,29 @@
-﻿/**
- * Créé le 19 mai 2016 par Jérome LE BARON
+/**
+ * Créé le 26 mai 2016 par Jérome LE BARON
  */
 package fr.s2re.stock.impl;
-
-import javax.transaction.Transactional;
 
 import org.apache.log4j.Logger;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import fr.s2re.stock.api.IProduitDao;
 import fr.s2re.stock.entity.Produit;
 
 /**
- * Pour la communication avec la bdd pour les {@link Produit}.
+ * Description de la classe
  * @author Jérome LE BARON
  * @author $LastChangedBy$
  * @version $Revision$ $Date$
  */
-@Service
 public class ProduitDaoImpl implements IProduitDao {
 
     /**
      * Pour faire du log.
      */
-    private static final Logger LOGGER = Logger.getLogger(StockWebServiceImpl.class);
+    private static final Logger LOGGER = Logger.getLogger(ProduitDaoImpl.class);
     /**
      * Pour faire les requetes.
      */
@@ -41,8 +37,7 @@ public class ProduitDaoImpl implements IProduitDao {
      * {@inheritDoc}
      */
     @Override
-    @Transactional
-    public Produit getProduitByReference(final String paramReference) {
+    public Produit getProduitByReference(String paramReference) {
         LOGGER.debug("Méthode Dao getProduitByReference");
         final Session session = sessionFactory.getCurrentSession();
         Query query = session.createQuery(GET_PRODUIT_BY_REFERENCE);
@@ -54,7 +49,6 @@ public class ProduitDaoImpl implements IProduitDao {
      * {@inheritDoc}
      */
     @Override
-    @Transactional
     public Produit updateProduit(Produit paramProduit) {
         LOGGER.debug("Méthode Dao updateProduit");
         final Session session = sessionFactory.getCurrentSession();
@@ -72,6 +66,4 @@ public class ProduitDaoImpl implements IProduitDao {
         sessionFactory = paramSessionFactory;
     }
 
-    
-    
 }

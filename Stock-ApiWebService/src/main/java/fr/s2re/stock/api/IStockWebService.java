@@ -9,7 +9,6 @@ import javax.jws.WebResult;
 import javax.jws.WebService;
 
 import fr.s2re.stock.dto.ProduitDto;
-import fr.s2re.stock.entity.Produit;
 
 /**
  * Toutes les méthodes exposées pour le webservice de stock.

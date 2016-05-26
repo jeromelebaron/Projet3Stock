@@ -7,8 +7,6 @@ import java.io.Serializable;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
-import fr.s2re.stock.entity.Produit;
-
 /**
  * Un objet {@link Produit} pour le passer à travers le réseau.
  * @author Jérome LE BARON

@@ -9,4 +9,13 @@
 	</parent>
 	<artifactId>Stock-Entity</artifactId>
 	<name>Stock-Entity</name>
+
+	<dependencies>
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+
 </project>

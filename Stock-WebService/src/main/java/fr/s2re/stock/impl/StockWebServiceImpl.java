@@ -6,7 +6,6 @@ package fr.s2re.stock.impl;
 import javax.jws.WebService;
 
 import org.apache.log4j.Logger;
-import org.hibernate.HibernateException;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import fr.s2re.stock.api.IProduitDao;
@@ -44,7 +43,7 @@ public class StockWebServiceImpl implements IStockWebService {
         try {
             final Produit produit = produitDao.getProduitByReference(paramReference);
             produitDto = Assembleur.fromProduitEntityToProduitDto(produit);
-        } catch (HibernateException localE) {
+        } catch (Exception localE) {
             LOGGER.error("Erreur avec Hibernate");
             LOGGER.error(localE);
         }
@@ -61,7 +60,7 @@ public class StockWebServiceImpl implements IStockWebService {
             Produit produit = Assembleur.fromProduitDtoToProduitEntity(paramProduit);
             produitDao.updateProduit(produit);
             Assembleur.fromProduitEntityToProduitDto(produit);
-        } catch (HibernateException localE) {
+        } catch (Exception localE) {
             LOGGER.error("Erreur avec Hibernate");
             LOGGER.error(localE);
         }

@@ -5,7 +5,27 @@
 		<groupId>fr.s2re</groupId>
 		<artifactId>Stock-Parent</artifactId>
 		<version>0.1</version>
+		<relativePath>../Stock-Parent/pom.xml</relativePath>
 	</parent>
 	<artifactId>Stock-ApiWebService</artifactId>
 	<name>Stock-ApiWebService</name>
+
+	<dependencies>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>${project.parent.groupId}</groupId>
+			<artifactId>Stock-DTO</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+	</dependencies>
+
+
 </project>

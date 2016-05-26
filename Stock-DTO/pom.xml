@@ -7,6 +7,6 @@
 		<version>0.1</version>
 		<relativePath>../Stock-Parent/pom.xml</relativePath>
 	</parent>
-	<artifactId>Stpck-DTO</artifactId>
+	<artifactId>Stock-DTO</artifactId>
 	<name>Stock-DTO</name>
 </project>
