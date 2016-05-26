@@ -1,8 +1,9 @@
 /*
  * Créé le 19 mai 2016 par Jérome LE BARON
  */
-package fr.s2re.stock.dto;
+package fr.s2re.stock.business.dto;
 
+import fr.s2re.stock.dto.ProduitDto;
 import fr.s2re.stock.entity.Produit;
 
 /**

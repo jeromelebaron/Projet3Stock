@@ -1,16 +1,16 @@
 /**
  * Créé le 19 mai 2016 par Jérome LE BARON
  */
-package fr.s2re.stock.impl;
+package fr.s2re.stock.webservice.impl;
 
 import javax.jws.WebService;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import fr.s2re.stock.api.IProduitDao;
-import fr.s2re.stock.api.IStockWebService;
-import fr.s2re.stock.dto.Assembleur;
+import fr.s2re.stock.api.data.IProduitDao;
+import fr.s2re.stock.api.webservice.IStockWebService;
+import fr.s2re.stock.business.dto.Assembleur;
 import fr.s2re.stock.dto.ProduitDto;
 import fr.s2re.stock.entity.Produit;
 

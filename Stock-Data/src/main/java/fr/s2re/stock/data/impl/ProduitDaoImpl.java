@@ -1,7 +1,7 @@
 /**
  * Créé le 26 mai 2016 par Jérome LE BARON
  */
-package fr.s2re.stock.impl;
+package fr.s2re.stock.data.impl;
 
 import org.apache.log4j.Logger;
 import org.hibernate.Query;
@@ -9,7 +9,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import fr.s2re.stock.api.IProduitDao;
+import fr.s2re.stock.api.data.IProduitDao;
 import fr.s2re.stock.entity.Produit;
 
 /**

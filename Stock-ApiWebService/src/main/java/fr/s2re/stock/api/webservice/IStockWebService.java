@@ -1,7 +1,7 @@
 /**
  * Créé le 19 mai 2016 par Jérome LE BARON
  */
-package fr.s2re.stock.api;
+package fr.s2re.stock.api.webservice;
 
 import javax.jws.WebMethod;
 import javax.jws.WebParam;

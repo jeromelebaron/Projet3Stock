@@ -8,4 +8,4 @@
  * @author $LastChangedBy$
  * @version $Revision$ $Date$
  */
-package fr.s2re.stock.dto;
+package fr.s2re.stock.business.dto;

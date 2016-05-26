@@ -5,4 +5,4 @@
  * @author $LastChangedBy$
  * @version $Revision$ $Date$
  */
-package fr.s2re.stock.impl;
+package fr.s2re.stock.api.business;

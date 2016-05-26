@@ -5,4 +5,4 @@
  * @author $LastChangedBy$
  * @version $Revision$ $Date$
  */
-package fr.s2re.stock.api;
+package fr.s2re.stock.api.webservice;
