@@ -86,6 +86,12 @@
 				<env>afcepf</env>
 			</properties>
 		</profile>
+		<profile>
+			<id>jerome</id>
+			<properties>
+				<env>jerome</env>
+			</properties>
+		</profile>
 	</profiles>
 
 	<build>
