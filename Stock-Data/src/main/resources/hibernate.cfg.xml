@@ -8,4 +8,5 @@
 		<property name="hibernate.hbm2ddl.auto">${hibernate.hbm2ddl.auto}</property>
 		<mapping class="fr.s2re.stock.entity.Produit" />
 	</session-factory>
+	
 </hibernate-configuration>

@@ -9,6 +9,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import fr.s2re.stock.api.data.IProduitDao;
 import fr.s2re.stock.entity.Produit;
@@ -39,6 +40,7 @@ public class ProduitDaoImpl implements IProduitDao {
      * {@inheritDoc}
      */
     @Override
+    @Transactional
     public Produit getProduitByReference(String paramReference) {
         LOGGER.debug("Méthode Dao getProduitByReference");
         final Session session = sessionFactory.getCurrentSession();
@@ -51,6 +53,7 @@ public class ProduitDaoImpl implements IProduitDao {
      * {@inheritDoc}
      */
     @Override
+    @Transactional
     public Produit updateProduit(Produit paramProduit) {
         LOGGER.debug("Méthode Dao updateProduit");
         final Session session = sessionFactory.getCurrentSession();
